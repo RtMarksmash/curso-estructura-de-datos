@@ -29,16 +29,22 @@ class myArray{
         return item
     }
 
-        unShiftItem(index){
+    unShiftItem(index){
             for (let i = index; i < this.length -1; i++) {
                 this.data[i] = this.data[i + 1];               
             }
             delete this.data[this.length -1];
             this.length--;
         }
+
+    shift(){
+        const item = this.data[0]
+        this.unShiftItem(0)
+        return item
     }
 
 
 
-
-const myArray1 = new myArray();
+    } 
+    
+    const myArray1 = new myArray();
