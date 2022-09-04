@@ -39,6 +39,11 @@ class BinarySerchtree {
         }
 
     }
+
+    search(value){
+        
+
+    }
 }
 
 
